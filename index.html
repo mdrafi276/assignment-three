@@ -4,12 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- daisyui css component -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- font-wosam cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- custom contral proparty -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- external css  -->
+  <style>
+
+  </style>
 </head>
 <body>
 <header>
-    <h1>
-        th
-    </h1>
+ <!-- nevbar -->
+ <div class="navbar rounded-full mt-5 h-[80px]  flex flex-col md:flex-row w-2/3 mx-auto bg bg-[#F85559] bg-base-100">
+    <div class="  list-none flex-col md:flex-row gap-3 text-white text-sm pl-10 flex-1">
+        <li>Menu</li>
+        <li>About Us</li>
+        <li>Shop</li>
+        <li>All Fruits</li>
+
+        
+    </div>
+    <div class="flex flex-col md:flex-row  mr-24 gap-5">
+        <img " src="./images/logo.png" alt="">
+        <h1>Fruit Burst</h1>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="form-control">
+        
+        <input type="text " placeholder="Search "  class="input rounded-full input-bordered w-24 md:w-72" />
+        <div>        <i class="fa-solid  fa-magnifying-glass" style="color: #000000;"></i></div>
+      </div>
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+           
+          </div>
+        </label>
+        <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
 </body>
 </html>
