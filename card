@@ -1,5 +1,6 @@
-<div class="flex justify-center items-center">
-                <div>Card</div>
-                <div>Card</div>
-                <div>card</div>
-            </div>
+
+<div class="flex ">
+    <span><i class="fa-brands fa-facebook" style="color: #ff0000;"></i></span>
+    <span><i class="fa-brands fa-twitter" style="color: red;"></i></span>
+    <span><i class="fa-brands fa-linkedin" style="color: #ff0026;"></i></span>
+  </div>
