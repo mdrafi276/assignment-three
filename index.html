@@ -41,7 +41,7 @@
     <!-- nevbar -->
     <div
       class="navbar rounded-full mt-5 h-[80px]   flex flex-col md:flex-row md:w-2/3 mx-auto bg  bg-[#F85559] bg-base-100">
-      <div class="  list-none flex-col  md:flex-row md:gap-3 text-white text-sm pl-10 flex-1">
+      <div class="  list-none  flex-col hidden md:flex  md:flex-row md:gap-3 text-white text-sm pl-10 flex-1">
         <li>Menu</li>
         <li>About Us</li>
         <li>Shop</li>
@@ -61,12 +61,12 @@
       <div class="flex-none  gap-2">
         <div class="form-control">
 
-          <div class="sticky"> <input type="text " placeholder="Search "
+          <div class="sticky hidden md:inline"> <input type="text " placeholder="Search "
               class="input  rounded-full input-bordered w-24 md:w-72" /></div>
-          <div class=" absolute md:top-12 md:right-80"> <i class="fa-solid   fa-magnifying-glass"
+          <div class=" absolute md:top-12 md:right-80"> <i class="fa-solid hidden md:inline  fa-magnifying-glass"
               style="color: #000000;"></i></div>
         </div>
-        <div class="dropdown  dropdown-end">
+        <div class="dropdown   dropdown-end">
           <label tabindex="0" class="btn btn-ghost btn-circle avatar">
             <div class="w-10 rounded-full">
 
@@ -74,7 +74,7 @@
           </label>
           <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
             <li>
-              <a class="justify-between">
+              <a class="justify-between hidden md:inline">
                 Profile
                 <span class="badge">New</span>
               </a>
@@ -278,7 +278,7 @@
   </div>
   <!-- end card section -->
   <section class=" h-80 mx-auto ">
-    <div class="hero w-2/3 mx-auto h-[500px] bg-contain bg-no-repeat "
+    <div class="hero  md:w-2/3 mx-auto md:h-[500px] bg-contain bg-no-repeat bg-gradient-to-r from-blue-950 to-gray-950 "
       style="background-image: url(./images/banner1.png);">
       <div class="hero-overlay  bg-opacity-0"></div>
       <div class="hero-content text-center text-neutral-content">
@@ -286,7 +286,7 @@
           <h1 class="mb-2 text-3xl font-bold">Meet the team section</h1>
           <p class="mb-2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
             Latin literature from 45 BC, making it over 2000 years old.</p>
-          <div class="flex justify-around gap-20">
+          <div class="flex flex-col md:flex-row justify-around md:gap-20">
             <div><img class=" " src="./images/member1.png" alt=""></div>
             <div><img class=" " src="./images/member1.png" alt=""></div>
             <div><img class=" " src="./images/member1.png" alt=""></div>
@@ -333,7 +333,41 @@
     font-family: 'Poppins', sans-serif;">Why Choose Us</h1>
     <p class="text-[10px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
   </div>
-
+  <!-- bonus section  -->
+  <section>
+    <div>
+      <h1 class="">Dedicated Team</h1>
+    </div>
+  </section>
+    <!-- footer conteiner -->
+    <footer>
+      <footer class="footer footer-center p-16 bg-black text-base-content rounded">
+        <div class="flex flex-row md:flex-row md:pl-12 md:mr-24 gap-5">
+          <img class="h-10" src="./images/logo.png" alt="">
+          <h1 class="text-white text-4xl  ">Fruit Burst</h1>
+        </div>
+        <div>
+          
+        <div class="grid text-white text-sm grid-flow-col gap-4">
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About Us</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a>
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a>
+        </div>
+        <div class="grid grid-flow-col pt-10 gap-5">
+           <h1><i class="fa-brands text-2xl fa-square-twitter" style="color: white;"></i></h1>
+           <h1><i class="fa-brands text-2xl fa-square-facebook" style="color: white;"></i></h1>
+           <h1><i class="fa-brands text-2xl fa-square-youtube" style="color: white;"></i></h1>
+           <h1><i class="fa-brands text-2xl fa-linkedin" style="color: white;"></i></h1>
+           <h1><i class="fa-brands text-2xl fa-square-instagram" style="color: white;"></i></h1>
+           <h1><i class="fa-brands text-2xl fa-apple" style="color: #ffffff;"></i></h1>
+           
+        </div>
+      </div> 
+      </footer>
+    </footer>
 </body>
 
 </html>
